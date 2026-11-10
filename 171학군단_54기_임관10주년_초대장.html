@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>작전명 집결 · 171학군단 54기 임관 10주년</title>
+  <meta property="og:title" content="작전명령 제54-10호 · 작전명 「집결」">
+  <meta property="og:description" content="171학군단 54기 임관 10주년 · 2026.12.19(토) 17:00 · 용산 코리안치킨클럽">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    :root {
+      --bg: #11170f;
+      --olive-900: #1c2619;
+      --olive-700: #34452f;
+      --olive-500: #5a6e4f;
+      --paper: #f4f0e4;
+      --paper-line: #ddd5bf;
+      --ink: #22281f;
+      --ink-soft: #5b6152;
+      --brass: #c8962e;
+      --brass-soft: #e8c66a;
+      --stamp: #b3261e;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+      background:
+        radial-gradient(circle at 20% 0%, #24301f 0%, transparent 55%),
+        radial-gradient(circle at 100% 100%, #1d2819 0%, transparent 50%),
+        var(--bg);
+      color: var(--ink);
+      min-height: 100vh;
+      padding: 28px 16px 48px;
+      display: flex;
+      justify-content: center;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: 440px
+    }
+
+    /* ===== 상단 커버 ===== */
+    .cover {
+      position: relative;
+      background: linear-gradient(160deg, var(--olive-900) 0%, var(--olive-700) 100%);
+      border-radius: 20px 20px 0 0;
+      padding: 30px 24px 26px;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .cover::before {
+      /* 위장무늬 느낌의 은은한 패턴 */
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: .08;
+      background:
+        radial-gradient(ellipse 60px 34px at 15% 30%, #000 60%, transparent 62%),
+        radial-gradient(ellipse 80px 40px at 80% 20%, #000 60%, transparent 62%),
+        radial-gradient(ellipse 70px 30px at 60% 75%, #000 60%, transparent 62%),
+        radial-gradient(ellipse 50px 40px at 25% 85%, #000 60%, transparent 62%);
+    }
+
+    .cover>* {
+      position: relative
+    }
+
+    .doc-no {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      letter-spacing: .12em;
+      color: #b9c4b0;
+      font-weight: 600;
+      margin-bottom: 22px;
+    }
+
+    .doc-no .tag {
+      border: 1px solid rgba(232, 198, 106, .6);
+      color: var(--brass-soft);
+      padding: 3px 8px;
+      border-radius: 3px;
+    }
+
+    .op-label {
+      font-size: 12px;
+      color: var(--brass-soft);
+      font-weight: 700;
+      letter-spacing: .3em
+    }
+
+    .op-name {
+      font-size: 46px;
+      font-weight: 900;
+      letter-spacing: -.02em;
+      line-height: 1.1;
+      margin: 6px 0 4px;
+    }
+
+    .op-name small {
+      font-size: 15px;
+      font-weight: 600;
+      color: #c9d2c0;
+      letter-spacing: .08em;
+      margin-left: 6px;
+      vertical-align: middle
+    }
+
+    .op-sub {
+      font-size: 15px;
+      color: #dfe5d8;
+      font-weight: 500;
+      line-height: 1.55
+    }
+
+    .op-sub b {
+      color: #fff;
+      font-weight: 800
+    }
+
+    .years {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 22px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .years .y {
+      font-size: 13px;
+      font-weight: 700;
+      color: #c9d2c0
+    }
+
+    .years .y em {
+      display: block;
+      font-style: normal;
+      font-size: 20px;
+      color: #fff;
+      font-weight: 800;
+      letter-spacing: -.01em
+    }
+
+    .years .line {
+      flex: 1;
+      height: 2px;
+      background: repeating-linear-gradient(90deg, var(--brass) 0 6px, transparent 6px 11px);
+      position: relative
+    }
+
+    .years .line span {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: var(--brass);
+      color: var(--olive-900);
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+
+    .years .y.r {
+      text-align: right
+    }
+
+    /* ===== 문서 본문 ===== */
+    .paper {
+      position: relative;
+      background:
+        repeating-linear-gradient(0deg, transparent 0 31px, rgba(0, 0, 0, .025) 31px 32px),
+        var(--paper);
+      border-radius: 0 0 20px 20px;
+      padding: 26px 22px 24px;
+      box-shadow: 0 30px 60px -20px rgba(0, 0, 0, .7);
+    }
+
+    .perf {
+      /* 문서 절취선 */
+      position: absolute;
+      top: -1px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: repeating-linear-gradient(90deg, var(--brass) 0 8px, transparent 8px 14px);
+      opacity: .8;
+    }
+
+    .stamp {
+      position: absolute;
+      top: 18px;
+      right: 16px;
+      border: 2.5px solid var(--stamp);
+      color: var(--stamp);
+      padding: 5px 9px;
+      border-radius: 6px;
+      transform: rotate(9deg);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .06em;
+      line-height: 1.25;
+      text-align: center;
+      opacity: .82;
+      mix-blend-mode: multiply;
+    }
+
+    .stamp small {
+      display: block;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: .1em
+    }
+
+    /* 디데이 */
+    .dday {
+      display: flex;
+      gap: 6px;
+      margin: 4px 0 24px;
+    }
+
+    .dday .cell {
+      flex: 1;
+      background: var(--olive-900);
+      color: #fff;
+      border-radius: 10px;
+      padding: 10px 4px 8px;
+      text-align: center;
+    }
+
+    .dday .num {
+      font-size: 24px;
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: -.02em;
+      line-height: 1.1
+    }
+
+    .dday .unit {
+      font-size: 10px;
+      color: #aab69f;
+      font-weight: 600;
+      letter-spacing: .1em;
+      margin-top: 2px
+    }
+
+    .dday .cell.main {
+      background: var(--brass);
+      color: var(--olive-900)
+    }
+
+    .dday .cell.main .unit {
+      color: #5a4413
+    }
+
+    .dday-caption {
+      font-size: 12px;
+      color: var(--ink-soft);
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: .02em
+    }
+
+    /* 5개항 */
+    .sec {
+      padding: 18px 0;
+      border-top: 1px solid var(--paper-line)
+    }
+
+    .sec:first-of-type {
+      border-top: none;
+      padding-top: 0
+    }
+
+    .sec-h {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .sec-h .n {
+      font-size: 11px;
+      font-weight: 800;
+      color: #fff;
+      background: var(--olive-700);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transform: translateY(-1px);
+    }
+
+    .sec-h h3 {
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: -.01em
+    }
+
+    .sec-h .en {
+      font-size: 10px;
+      color: var(--olive-500);
+      font-weight: 700;
+      letter-spacing: .15em;
+      margin-left: auto
+    }
+
+    .sec p {
+      font-size: 14.5px;
+      line-height: 1.7;
+      color: var(--ink);
+      font-weight: 450
+    }
+
+    .sec p .soft {
+      color: var(--ink-soft)
+    }
+
+    .hl {
+      background: linear-gradient(transparent 58%, rgba(200, 150, 46, .35) 58%);
+      font-weight: 700
+    }
+
+    .kv {
+      display: grid;
+      grid-template-columns: 72px 1fr;
+      row-gap: 12px;
+      font-size: 14.5px
+    }
+
+    .kv dt {
+      color: var(--olive-500);
+      font-weight: 700;
+      font-size: 13px;
+      padding-top: 1px
+    }
+
+    .kv dd {
+      font-weight: 600;
+      line-height: 1.5
+    }
+
+    .kv dd .big {
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -.01em;
+      display: block
+    }
+
+    .kv dd .note {
+      display: block;
+      font-size: 12.5px;
+      color: var(--ink-soft);
+      font-weight: 500;
+      margin-top: 2px
+    }
+
+    .place {
+      margin-top: 14px;
+      background: #fff;
+      border: 1px solid var(--paper-line);
+      border-radius: 14px;
+      padding: 16px;
+    }
+
+    .place .name {
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: -.01em
+    }
+
+    .place .addr {
+      font-size: 13.5px;
+      color: var(--ink-soft);
+      margin: 3px 0 14px
+    }
+
+    .btns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      height: 44px;
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 13.5px;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: transform .1s, filter .15s;
+    }
+
+    .btn:active {
+      transform: scale(.97)
+    }
+
+    .btn.primary {
+      background: #03c75a;
+      color: #fff
+    }
+
+    .btn.ghost {
+      background: #eef0e8;
+      color: var(--ink);
+      border: 1px solid var(--paper-line)
+    }
+
+    .btn.full {
+      grid-column: 1/-1;
+      background: var(--olive-900);
+      color: #fff;
+      height: 50px;
+      font-size: 14.5px
+    }
+
+    .btn.full:hover,
+    .btn.primary:hover {
+      filter: brightness(1.08)
+    }
+
+    .btn svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0
+    }
+
+    .supply {
+      display: flex;
+      flex-direction: column;
+      gap: 8px
+    }
+
+    .supply li {
+      list-style: none;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .supply .ic {
+      flex-shrink: 0;
+      width: 26px;
+      height: 26px;
+      border-radius: 8px;
+      background: #e6e9dc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+
+    .supply b {
+      font-weight: 800
+    }
+
+    .cta {
+      margin-top: 22px
+    }
+
+    .sign {
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 2px solid var(--ink);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 12px;
+    }
+
+    .sign .who {
+      font-size: 12px;
+      color: var(--ink-soft);
+      line-height: 1.55
+    }
+
+    .sign .who b {
+      display: block;
+      font-size: 15px;
+      color: var(--ink);
+      font-weight: 800;
+      margin-top: 2px
+    }
+
+    .seal {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      border: 2px solid var(--stamp);
+      color: var(--stamp);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 900;
+      line-height: 1.05;
+      transform: rotate(-8deg);
+      opacity: .85;
+      box-shadow: inset 0 0 0 3px var(--paper), inset 0 0 0 4px var(--stamp);
+    }
+
+    .pilseung {
+      text-align: center;
+      margin-top: 22px;
+      color: #8e9a85;
+      font-size: 12px;
+      letter-spacing: .35em;
+      font-weight: 700;
+    }
+
+    .pilseung b {
+      display: block;
+      color: var(--brass-soft);
+      font-size: 20px;
+      letter-spacing: .5em;
+      margin-bottom: 4px;
+      font-weight: 900
+    }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 28px;
+      transform: translate(-50%, 20px);
+      background: #1c2619;
+      color: #fff;
+      font-size: 13.5px;
+      font-weight: 600;
+      padding: 11px 18px;
+      border-radius: 30px;
+      opacity: 0;
+      pointer-events: none;
+      transition: all .25s;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, .4);
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translate(-50%, 0)
+    }
+
+    /* 등장 애니메이션 */
+    .rise {
+      opacity: 0;
+      transform: translateY(14px);
+      animation: rise .6s cubic-bezier(.2, .7, .2, 1) forwards
+    }
+
+    .rise.d1 {
+      animation-delay: .08s
+    }
+
+    .rise.d2 {
+      animation-delay: .18s
+    }
+
+    @keyframes rise {
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+      .rise {
+        animation: none;
+        opacity: 1;
+        transform: none
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- ===== 커버 ===== -->
+    <header class="cover rise">
+      <div class="doc-no">
+        <span>작전명령 제54-10호</span>
+      </div>
+      <div class="op-label">OPERATION</div>
+      <h1 class="op-name">집결<small>REUNION</small></h1>
+      <p class="op-sub">171학군단 제54기 <b>임관 10주년</b> 동기모임<br>소위 계급장 달던 그날로부터, 10년.</p>
+
+      <div class="years">
+        <div class="y">임관<em>2016</em></div>
+        <div class="line"><span>+10Y</span></div>
+        <div class="y r">재집결<em>2026</em></div>
+      </div>
+    </header>
+
+    <!-- ===== 본문 ===== -->
+    <main class="paper rise d1">
+      <div class="perf"></div>
+      <div class="stamp">불참 불가<small>NO EXCUSE</small></div>
+
+      <div class="dday-caption" id="ddayCaption">작전 개시까지</div>
+      <div class="dday" id="dday">
+        <div class="cell main">
+          <div class="num" id="dD">--</div>
+          <div class="unit">DAYS</div>
+        </div>
+        <div class="cell">
+          <div class="num" id="dH">--</div>
+          <div class="unit">HRS</div>
+        </div>
+        <div class="cell">
+          <div class="num" id="dM">--</div>
+          <div class="unit">MIN</div>
+        </div>
+        <div class="cell">
+          <div class="num" id="dS">--</div>
+          <div class="unit">SEC</div>
+        </div>
+      </div>
+
+      <!-- 1. 상황 -->
+      <section class="sec">
+        <div class="sec-h"><span class="n">1</span>
+          <h3>상황</h3><span class="en">SITUATION</span>
+        </div>
+        <p>현역, 예비역, 그리고 어느새 아빠가 된 동기까지.<br>
+          각자의 전선에서 10년을 버틴 54기 전 병력의 <span class="hl">근황 파악이 시급</span>한 상황</p>
+      </section>
+
+      <!-- 2. 임무 -->
+      <section class="sec">
+        <div class="sec-h"><span class="n">2</span>
+          <h3>임무</h3><span class="en">MISSION</span>
+        </div>
+        <p>54기 동기회는 아래 일시·장소에 <span class="hl">전원 집결</span>하여<br>
+          치킨을 확보하고, 10년치 무용담을 교환한다.</p>
+      </section>
+
+      <!-- 3. 실시 -->
+      <section class="sec">
+        <div class="sec-h"><span class="n">3</span>
+          <h3>실시</h3><span class="en">EXECUTION</span>
+        </div>
+        <dl class="kv">
+          <dt>작전 일시</dt>
+          <dd><span class="big">2026. 12. 19 (토) 17:00</span><span class="note">17:00 정각 출동 · 초임 소위의 칼각으로</span></dd>
+          <dt>투입 병력</dt>
+          <dd>12명 <span class="soft" style="color:var(--ink-soft);font-weight:500">(확정 10 + 예비 2)</span><span
+              class="note">12명을 초과한 추가 합류 환영 · 동기회장에게 사전 보고</span></dd>
+        </dl>
+
+        <div class="place">
+          <div class="name">📍 용산 코리안치킨클럽</div>
+          <div class="addr" id="addr">서울 용산구 한강대로21나길 40</div>
+          <div class="btns">
+            <a class="btn primary" href="https://naver.me/FTd5y1Yd" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C7.6 2 4 5.6 4 10c0 5.3 7 11.5 7.3 11.8.4.3 1 .3 1.4 0C13 21.5 20 15.3 20 10c0-4.4-3.6-8-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z" />
+              </svg>
+              네이버 지도
+            </a>
+            <button class="btn ghost" type="button" onclick="copyAddr()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="9" y="9" width="12" height="12" rx="2" />
+                <path d="M5 15V5a2 2 0 012-2h10" />
+              </svg>
+              주소 복사
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. 전투근무지원 -->
+      <section class="sec">
+        <div class="sec-h"><span class="n">4</span>
+          <h3>전투근무지원</h3><span class="en">LOGISTICS</span>
+        </div>
+        <ul class="supply">
+          <li><span class="ic">🅿️</span><span><b>주차 3시간 무료.</b> 차량 기동 가능</span></li>
+          <li><span class="ic">🍗</span><span><b>보급품:</b> 치킨, 그리고 10년 묵은 이야기</span></li>
+          <li><span class="ic">⏰</span><span><b>지각은 곧 작전 실패!</b>칼각 정시 집결 엄수!</span></li>
+        </ul>
+      </section>
+
+      <!-- 5. 지휘 및 통신 -->
+      <section class="sec">
+        <div class="sec-h"><span class="n">5</span>
+          <h3>지휘 및 통신</h3><span class="en">COMMAND</span>
+        </div>
+        <p>참석 변동 및 문의는 <span class="hl">동기회장</span>에게 즉시 보고 바람.</p>
+      </section>
+
+      <div class="sign">
+        <div class="who">발령 · 2026. 11.<b>171학군단 제54기 동기회</b></div>
+        <div class="seal">54<br>期</div>
+      </div>
+    </main>
+
+    <div class="pilseung rise d2"><b>필승</b>ROTC 54TH · SEE YOU ON 12.19</div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script>
+    // ---- 디데이 카운트다운 ----
+    const TARGET = new Date('2026-12-19T17:00:00+09:00').getTime();
+    const pad = n => String(n).padStart(2, '0');
+    function tick() {
+      let diff = TARGET - Date.now();
+      const cap = document.getElementById('ddayCaption');
+      if (diff <= 0) {
+        cap.textContent = '작전 개시! 지금 바로 집결하라';
+        ['dD', 'dH', 'dM', 'dS'].forEach(id => document.getElementById(id).textContent = '00');
+        return;
+      }
+      const d = Math.floor(diff / 864e5); diff %= 864e5;
+      const h = Math.floor(diff / 36e5); diff %= 36e5;
+      const m = Math.floor(diff / 6e4); diff %= 6e4;
+      const s = Math.floor(diff / 1e3);
+      document.getElementById('dD').textContent = d;
+      document.getElementById('dH').textContent = pad(h);
+      document.getElementById('dM').textContent = pad(m);
+      document.getElementById('dS').textContent = pad(s);
+      cap.textContent = d === 0 ? '오늘이 D-DAY! 작전 개시까지' : '작전 개시까지 D-' + d;
+    }
+    tick(); setInterval(tick, 1000);
+
+    // ---- 토스트 ----
+    function toast(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = msg; t.classList.add('show');
+      clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('show'), 1800);
+    }
+
+    // ---- 주소 복사 ----
+    function copyAddr() {
+      const text = document.getElementById('addr').textContent.trim();
+      const done = () => toast('주소 복사 완료! 내비에 붙여넣으세요');
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(done).catch(fallback);
+      } else fallback();
+      function fallback() {
+        const ta = document.createElement('textarea');
+        ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); done(); } catch (e) { toast('복사 실패 · 길게 눌러 복사하세요'); }
+        document.body.removeChild(ta);
+      }
+    }
+
+    // ---- 캘린더(.ics) 등록 ----
+    function addCal() {
+      const ics = [
+        'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//ROTC54//Homecoming//KO', 'CALSCALE:GREGORIAN',
+        'BEGIN:VEVENT',
+        'UID:rotc171-54-10th-20261219@homecoming',
+        'DTSTAMP:20261110T000000Z',
+        'DTSTART:20261219T080000Z',
+        'DTEND:20261219T110000Z',
+        'SUMMARY:[작전명 귀환] 171학군단 54기 임관 10주년',
+        'LOCATION:용산 코리안치킨클럽 (서울 용산구 한강대로21나길 40)',
+        'DESCRIPTION:17:00 정각 집결. 주차 3시간 무료. 지도: https://naver.me/FTd5y1Yd',
+        'BEGIN:VALARM', 'TRIGGER:-P1D', 'ACTION:DISPLAY', 'DESCRIPTION:내일 54기 집결!', 'END:VALARM',
+        'END:VEVENT', 'END:VCALENDAR'
+      ].join('\r\n');
+      const blob = new Blob([ics], { type: 'text/calendar;charset=utf-8' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'ROTC54_10주년_작전일정.ics';
+      document.body.appendChild(a); a.click(); a.remove();
+      toast('캘린더 파일을 열어 일정을 저장하세요');
+    }
+  </script>
+</body>
+
+</html>
